@@ -1,11 +1,31 @@
-#outer {
+#outerContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 #mainContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  width:400px;
+  background-color:rgb(196, 196, 255)
+}
+
+#loginScreen {
+  background-color:rgb(196, 196, 255);
+  display:inline
+}
+
+#createUserScreen {
+  background-color:rgb(196, 196, 255);
+  display:none
+}
+
+
+.newNote {
+  background-color:rgb(238, 255, 0);
+  display:none
+}
+
+#notesContainer {
+  background-color:rgb(238, 255, 0);
+  display:none
 }

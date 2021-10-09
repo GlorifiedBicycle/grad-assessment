@@ -1,8 +1,10 @@
 
+const username = document.getElementById(loginUsername);
 
-function writeNote(titleString, contentString) {
-  const testElement = document.getElementById('mainContainer');
-  console.log('testing index.js');
+function writeNote(username, password) {
+  console.log(username);
 }
 
-module.exports = writeNote;
+function signUp(url) {
+
+}

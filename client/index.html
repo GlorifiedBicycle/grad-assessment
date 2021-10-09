@@ -4,39 +4,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <script src="index.js"></script> -->
+  <script src="index.js"></script>
   <link rel="stylesheet" href="styles.css">
-  <title>NOTES</title>
+  <title>NOWnotes.com</title>
 </head>
 <body style="background-color:lavender">
 
-  <div id="outer">
-  <div id="mainContainer" style="width:400px; background-color:red">
-    
-    <!-- <div id="loginScreen" style="background-color:rgb(196, 196, 255)">
-      <p>Login Screen</p>
-      <input type="text" id="loginUsername" value="username">
-      <input type="text" id="loginPassword" value="password">
-      <button>LOGIN</button>
-      <button>SIGN UP</button>
-    </div> -->
+  <div id="outerContainer"> <!-- for alignment purposes -->
+  <div id="mainContainer">
 
-    <div id="notesContainer" style="background-color:rgb(238, 255, 0)">
-      <p>Notes Container</p>
-      <button>NEW NOTE</button>
-      <div class="userNotes">
-        <input type="text" class="noteTitle" value="Title" style="height:1.5em; width:15em">
-        <input type="text" class="noteContent" value="Content" style="height:10em; width:20em">
-      </div>
+    <!-- the login screen / button to create new user -->
+    <div id="loginScreen">
+      <p>Login Screen</p>
+      <form>
+        <input type="text" id="loginUsername" value="username">
+        <input type="text" id="loginPassword" value="password">
+        <button onclick="logMeIn()">LOGIN</button>
+        <button onclick="signMeUp()">SIGN UP</button>
+      </form>
     </div>
 
-    <!-- <div id="createUserScreen" style="background-color:rgb(196, 196, 255)">
+    <!-- a screen for creating a new user account -->
+    <div id="createUserScreen">
       <p>Create User Screen</p>
       <input type="text" id="createUsername" value="username">
       <input type="text" id="createPassword" value="password">
-      <button>NEW USER</button>
-      <button>BACK TO LOGIN</button>
-    </div> -->
+      <button onclick="createNewUser()">NEW USER</button>
+      <button onclick="backToLogin()">BACK</button>
+    </div>
+
+    <!-- a screen for creating a new note in database-->
+    <div class="newNote">
+      <form>
+        <button onclick="createNewNote()">CREATE</button>
+        <button onclick="backToNotes()">BACK</button>
+        <input type="text" class="noteTitle" value="Title" style="height:1.5em; width:15em; display:none">
+        <input type="text" class="noteContent" value="Content" style="height:10em; width:20em">
+      </form>
+    </div>
+
+    <!-- allow the user to browse their existing notes -->
+    <div id="notesContainer" >
+      <form>
+        <button onclick="displayNewNote()">NEW NOTE</button>
+        <button onclick="logMeOut()">LOG OUT</button>
+      </form>
+      <!-- <div class="userNotes"> prepend a note for each note in database -->
+      </div>
+
+    </div>
 
   </div>
   </div>
