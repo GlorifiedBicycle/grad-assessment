@@ -1,12 +1,16 @@
-#outerContainer {
+/* #outerContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
+} */
 
 #mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width:400px;
-  background-color:rgb(196, 196, 255)
+  box-shadow: 5px 5px 5px gray;
+  /* background-color:rgb(196, 196, 255) */
 }
 
 #loginScreen {

@@ -10,51 +10,53 @@
 </head>
 <body style="background-color:lavender">
 
-  <div id="outerContainer"> <!-- for alignment purposes -->
   <div id="mainContainer">
 
     <!-- the login screen / button to create new user -->
     <div id="loginScreen">
-      <p>Login Screen</p>
-      <form>
+      <p>Please Log In</p>
+      <!-- <form> -->
         <input type="text" id="loginUsername" value="username">
         <input type="text" id="loginPassword" value="password">
         <button onclick="logMeIn()">LOGIN</button>
         <button onclick="signMeUp()">SIGN UP</button>
-      </form>
+      <!-- </form>  -->
     </div>
 
     <!-- a screen for creating a new user account -->
     <div id="createUserScreen">
-      <p>Create User Screen</p>
-      <input type="text" id="createUsername" value="username">
-      <input type="text" id="createPassword" value="password">
-      <button onclick="createNewUser()">NEW USER</button>
-      <button onclick="backToLogin()">BACK</button>
+      <p>Create New User?</p>
+      <!-- <form> -->
+        <input type="text" id="createUsername" value="username">
+        <input type="text" id="createPassword" value="password">
+        <button onclick="createNewUser()">NEW USER</button>
+        <button onclick="backToLogin()">BACK</button>
+      <!-- </form> -->
     </div>
 
     <!-- a screen for creating a new note in database-->
     <div class="newNote">
-      <form>
+      <p>Create a new note.</p>
+      <!-- <form> -->
         <button onclick="createNewNote()">CREATE</button>
         <button onclick="backToNotes()">BACK</button>
         <input type="text" class="noteTitle" value="Title" style="height:1.5em; width:15em; display:none">
         <input type="text" class="noteContent" value="Content" style="height:10em; width:20em">
-      </form>
+      <!-- </form> -->
     </div>
 
     <!-- allow the user to browse their existing notes -->
     <div id="notesContainer" >
-      <form>
-        <button onclick="displayNewNote()">NEW NOTE</button>
+      <p>My Notes</p>
+      <!-- <form> -->
+        <button onclick="newNoteScreen()">NEW NOTE</button>
         <button onclick="logMeOut()">LOG OUT</button>
-      </form>
-      <!-- <div class="userNotes"> prepend a note for each note in database -->
+      <!-- </form> -->
+      <div class="userNotes"> <!-- prepend a note for each note in database -->
       </div>
-
     </div>
 
   </div>
-  </div>
+  
 </body>
 </html>
