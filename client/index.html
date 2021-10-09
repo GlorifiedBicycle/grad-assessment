@@ -8,10 +8,37 @@
   <link rel="stylesheet" href="styles.css">
   <title>NOTES</title>
 </head>
-<body>
-  <div class="mainContainer">
-    <div class="notes">
+<body style="background-color:lavender">
+
+  <div id="outer">
+  <div id="mainContainer" style="width:400px; background-color:red">
+    
+    <!-- <div id="loginScreen" style="background-color:rgb(196, 196, 255)">
+      <p>Login Screen</p>
+      <input type="text" id="loginUsername" value="username">
+      <input type="text" id="loginPassword" value="password">
+      <button>LOGIN</button>
+      <button>SIGN UP</button>
+    </div> -->
+
+    <div id="notesContainer" style="background-color:rgb(238, 255, 0)">
+      <p>Notes Container</p>
+      <button>NEW NOTE</button>
+      <div class="userNotes">
+        <input type="text" class="noteTitle" value="Title" style="height:1.5em; width:15em">
+        <input type="text" class="noteContent" value="Content" style="height:10em; width:20em">
+      </div>
     </div>
+
+    <!-- <div id="createUserScreen" style="background-color:rgb(196, 196, 255)">
+      <p>Create User Screen</p>
+      <input type="text" id="createUsername" value="username">
+      <input type="text" id="createPassword" value="password">
+      <button>NEW USER</button>
+      <button>BACK TO LOGIN</button>
+    </div> -->
+
+  </div>
   </div>
 </body>
 </html>

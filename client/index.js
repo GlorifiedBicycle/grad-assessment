@@ -1,7 +1,8 @@
 
 
 function writeNote(titleString, contentString) {
-  console.log('calling writeNote');
+  const testElement = document.getElementById('mainContainer');
+  console.log('testing index.js');
 }
 
 module.exports = writeNote;
